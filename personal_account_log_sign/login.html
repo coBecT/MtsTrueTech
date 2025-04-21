@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="login.css">
+    <title>Вход | MTS Style</title>
+</head>
+<body>
+    <div class="container" id="container">
+        <!-- Форма входа -->
+        <div class="form-container sign-in">
+            <form>
+                <h1>Войти</h1>
+                <div class="social-icons">
+                    <a href="#" class="icon"><i class="fa-brands fa-google-plus-g"></i></a>
+                    <a href="#" class="icon"><i class="fa-brands fa-vk"></i></a>
+                    <a href="#" class="icon"><i class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+                <span>или используйте почту для входа</span>
+                <input type="email" placeholder="Email">
+                <input type="password" placeholder="Пароль">
+                <a href="#" class="forgot-password">Забыли пароль?</a>
+                <button>Войти</button>
+            </form>
+        </div>
+
+        <!-- Форма регистрации -->
+        <div class="form-container sign-up">
+            <form>
+                <h1>Создать аккаунт</h1>
+                <div class="social-icons">
+                    <a href="#" class="icon"><i class="fa-brands fa-google-plus-g"></i></a>
+                    <a href="#" class="icon"><i class="fa-brands fa-vk"></i></a>
+                    <a href="#" class="icon"><i class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+                <span>или используйте почту для регистрации</span>
+                <input type="text" placeholder="Имя">
+                <input type="text" placeholder="Фамилия">
+                <input type="email" placeholder="Email">
+                <input type="password" placeholder="Пароль">
+                <input type="password" placeholder="Повторите пароль">
+                <button>Зарегистрироваться</button>
+            </form>
+        </div>
+
+        <!-- Переключающая панель -->
+        <div class="toggle-container">
+            <div class="toggle">
+                <div class="toggle-panel toggle-left">
+                    <h1>Добро пожаловать!</h1>
+                    <p>Введите свои данные для входа</p>
+                    <button class="hidden" id="login">Войти</button>
+                </div>
+                <div class="toggle-panel toggle-right">
+                    <h1>Привет!</h1>
+                    <p>Зарегистрируйтесь, чтобы получить доступ</p>
+                    <button class="hidden" id="register">Зарегистрироваться</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="login.js"></script>
+    <!-- Подключаем SDK VK -->
+    <script src="https://vk.com/js/api/openapi.js?169"></script>
+    
+    <!-- Подключаем SDK Google -->
+    <script src="https://accounts.google.com/gsi/client" async defer></script>
+</body>
+</html>
